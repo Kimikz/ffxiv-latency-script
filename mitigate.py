@@ -2376,8 +2376,8 @@ def __main__() -> int:
     logging.info(f"Use measured socket latency: {'yes' if args.measure_ping else 'no'}")
 
     if sys.platform == 'linux':
-        OodleWithBudgetAbiThunks.init_module()
         os.chdir(os.path.dirname(os.path.abspath(__file__)))
+        OodleWithBudgetAbiThunks.init_module()
     else:
         logging.warning("Only linux is supported at the moment.")
         return -1
