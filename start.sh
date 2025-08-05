@@ -39,7 +39,7 @@ download_files()
     fi
 
     if [ ! -f "${MITIGATE_PY}" ]; then
-        curl -L "https://raw.githubusercontent.com/kimikz/ffxiv-latency-script/main/mitigate.py" \
+        curl -L "https://raw.githubusercontent.com/Soreepeong/XivMitmLatencyMitigator/main/mitigate.py" \
              -o "${MITIGATE_PY}"
     fi
 
